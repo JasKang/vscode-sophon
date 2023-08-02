@@ -313,7 +313,7 @@
 					"begin": "//\\s*(@[a-zA-Z0-9\\-\\_]+)\\s*",
 					"beginCaptures": {
 						"1": {
-							"name": "support.type.field.proto"
+							"name": "meta.type.name.proto"
 						}
 					},
 					"end": "(?:\\n|$)",
@@ -333,10 +333,8 @@
 		"comment-meta": {
 			"patterns": [
 				{
-					"name": "comment.meta.normal.proto",
-					"begin": "//",
-					"end": "(?:\\n|$)"
-				}
+          "include":"source.js"
+        }
 			]
 		},
     "qstring-single": {
