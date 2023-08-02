@@ -1,0 +1,25 @@
+{
+  "name": "sophon",
+  "displayName": "sophon",
+  "description": "sophon",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "proto",
+      "aliases": ["Sophon Proto"],
+      "extensions": [".proto"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "proto",
+      "scopeName": "source.proto",
+      "path": "./syntaxes/proto.tmLanguage.json"
+    }]
+  }
+}
